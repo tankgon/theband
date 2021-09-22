@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 150%;
+}
+:root{
+    --text-color:red;
+    
+}
+h1{
+    --my-color: blue;
+    color:var(--my-color);
+}
+h2 {
+    color: var(--text-color);
+}
+h3 {
+    color: var(--text-color);
+}
+.b{
+    margin-top: 100 px;
+    margin-left: 600px;
+    color:red;
+    font-size:20px;
+}
+.box{
+/* calc dùng để tính toán */
+    width: calc(100%+20%);
+    height: 100px;
+    background-color: red;
+}
+.link1 a{
+    text-decoration: none;
+    color: green;
+}
+/* hover di chuột */
+.link1 a:hover{
+    color: hotpink;
+}
+.link2 a{
+    text-decoration:none;
+    color: green;
+}
+/* active nhấp chuột */
+.link2 a:active{
+    color: hotpink;
+}
+.link3 li{
+    float:right;
+    margin-right: 100px;
+}
+/* :first-child lấy phần tử đầu tiên */
+.link3 li:first-child{
+    color: red;
+}
+/* :last-child lấy phần tử đầu tiên */
+.link3 li:last-child{
+    color: blue;
+}
+
+
+/* 
+- ::before
+- ::after
+- ::first-letter (chữ cái đầu tiên)
+- ::first-line (dòng đầu tiên)
+- ::selection (dùng để chọn all có other color )
+
+ */
+
+.box1{
+    width: 50px;
+    height: 50px;
+    border: black;
+    border-style: solid;
+    border-right-width : 10px;
+    border-left-width: 0px;
+    border-bottom-width: 10px;
+    border-top-width: 0px;
+    background: blue;
+    margin-left: 100px;
+}
+
+.box2{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    border:10px dashed blueviolet;
+    background-clip: content-box;
+}
+.box3{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0,rgba(255, 255,0,0.5),rgba(0,0,255)),
+    url(https://th.bing.com/th/id/R.4516b45b772005b5a4a1da6f9617e415?rik=5yDNmGKn9GVm%2fw&pid=ImgRaw&r=0);
+    background-size: 100px;  
+}
+/* làm background đẹp (repeat background stock image) */
+.box4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://th.bing.com/th/id/OIP.zeG5x7Tw9NwJhoFMnIuD1wHaHa?pid=ImgDet&w=800&h=800&rs=1);
+    background-size: 300px;
+}
+.box5{
+    background-color: #cccccc;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+@media screen {
+    textfirt{
+        color: red;
+    }
+}
